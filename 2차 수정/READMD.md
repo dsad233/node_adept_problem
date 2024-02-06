@@ -1,4 +1,4 @@
-1. 설계: API 명세서 작성
+**1. 설계: API 명세서 작성**
    API 명세서 작성
   -> https://teamsparta.notion.site/30a75380a5dd4b19922c110388cb6465?v=68786499cb564a0381a79fdcc0320ed8
    전 13조 팀원 분들이랑 API 명세서 작성하였습니다.
@@ -8,17 +8,17 @@
   -> https://www.erdcloud.com/d/jphsgaXrDWPa7R2cN
 
 
-2. 개발-1: 인증 관련 기능 개발
+**2. 개발-1: 인증 관련 기능 개발**
    회원가입 API: api/register [post]
    로그인 API: api/login [post]
    인증 Middleware: middlewares.js
 
 
-3. 개발-2: 사용자 관련 기능 개발
+**3. 개발-2: 사용자 관련 기능 개발**
    내 정보 조회 API: api/acess [get]
 
 
-4. 개발-3: 이력서 관련 기능 개발
+**4. 개발-3: 이력서 관련 기능 개발**
    모든 이력서 목록 조회 API: api/resumeacess [get]
    이력서 상세 조회 API: api/resumeacess/:resumeId [get]
    이력서 생성 API (✅ 인증 필요 - middleware 활용): api/resume [post]
@@ -26,10 +26,10 @@
    이력서 삭제 API (✅ 인증 필요 - middleware 활용): api/resume/:resumeId [delete]
 
 
-5. 테스트: API 호출 도구로 동작 확인
+**5. 테스트: API 호출 도구로 동작 확인**
    -> 완료.  허나 이력서 생성 부분에서 오류가 발생. ( 이력서 생성을 하고, 또 다시 생성 요청 시 create 오류.. if 문으로 조건을 줘서 오류를 피해야 방안을 찾아야 할듯)
 
-6. 배포: 누구나 이용할 수 있도록 하기
+**6. 배포: 누구나 이용할 수 있도록 하기**
    aws, pm2 배포에 대해서 더 알아봐야 할 것!
 
 
