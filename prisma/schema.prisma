@@ -10,9 +10,10 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+
 model Users {
   userId    Int      @id @default(autoincrement()) @map("userId")
-  email     String @unique @map("email")
+  email     String @map("email")
   password  String   @map("password")
   name      String   @map("name")
   createdAt DateTime @default(now()) @map("createdAt")
@@ -25,7 +26,7 @@ model Users {
 
 model Resume {
   resumeId      Int          @id @default(autoincrement()) @map("resumeId")
-  userId        Int          @unique @map("userId")
+  userId        Int          @map("userId")
   resumetitle   String       @map("resumetitle")
   resumecontent String       @map("resumecontent") @db.Text
   resumestatus  Resumestatus @map("resumestatus")
